@@ -1,0 +1,32 @@
+schema: '2.0'
+stages:
+  complete-facebook_beer_pages:
+    cmd: dz run-step complete-facebook_beer_pages
+    deps:
+    - path: src/facebook_beer_pages.py
+      md5: f908ea21036a369ffcc19099f3ee4c10
+      size: 767
+    outs:
+    - path: data/socialmedia/facebook_beer_pages/complete
+      md5: dabdac6de321f1301e8e8c41017b9ff7.dir
+      size: 2481129
+      nfiles: 4
+  complete-facebook_exports:
+    cmd: dz run-step complete-facebook_exports
+    deps:
+    - path: data/socialmedia/facebook_beer_pages/complete/facebook_post.parquet
+      md5: 0b9c68cf778bac54e161e4a75b7539e6
+      size: 1423761
+    - path: data/socialmedia/facebook_beer_pages/complete/page_record.parquet
+      md5: 3f95e5806284189453815b6c456668bd
+      size: 7395
+    - path: data/socialmedia/facebook_beer_pages/complete/post_record.parquet
+      md5: 0759b301a5f9c4bd0cc4b64b852320fe
+      size: 1047637
+    - path: src/facebook_exports.py
+      md5: 81697c4cd292ef14308272caea6591f0
+      size: 1093
+    outs:
+    - path: data/socialmedia/facebook_exports/complete/post_export.parquet
+      md5: c51a92ec5697d99a5269f9149327cb3d
+      size: 1697906

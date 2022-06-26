@@ -1,0 +1,17 @@
+stages:
+  complete-facebook_beer_pages:
+    cmd: dz run-step complete-facebook_beer_pages
+    deps:
+    - src/facebook_beer_pages.py
+    outs:
+    - data/socialmedia/facebook_beer_pages/complete:
+        persist: true
+  complete-facebook_exports:
+    cmd: dz run-step complete-facebook_exports
+    deps:
+    - data/socialmedia/facebook_beer_pages/complete/facebook_post.parquet
+    - data/socialmedia/facebook_beer_pages/complete/page_record.parquet
+    - data/socialmedia/facebook_beer_pages/complete/post_record.parquet
+    - src/facebook_exports.py
+    outs:
+    - data/socialmedia/facebook_exports/complete/post_export.parquet
