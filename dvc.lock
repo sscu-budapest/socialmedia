@@ -24,9 +24,9 @@ stages:
       md5: 0759b301a5f9c4bd0cc4b64b852320fe
       size: 1047637
     - path: src/facebook_exports.py
-      md5: 81697c4cd292ef14308272caea6591f0
-      size: 1093
+      md5: ab887188ad0931f0e3b896bf7904819a
+      size: 1088
     outs:
     - path: data/socialmedia/facebook_exports/complete/post_export.parquet
-      md5: c51a92ec5697d99a5269f9149327cb3d
-      size: 1697906
+      md5: 73e77ba9df8dd5cb5c3853723a185410
+      size: 1697891
