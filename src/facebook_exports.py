@@ -1,6 +1,6 @@
 import datazimmer as dz
-from src import meta
-from src.facebook_beer_pages import page_record_table, post_record_table, post_table
+from . import meta
+from .facebook_beer_pages import page_record_table, post_record_table, post_table
 
 
 class PostExport(meta.PostRecord):
