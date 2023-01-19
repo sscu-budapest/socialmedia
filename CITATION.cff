@@ -1,0 +1,20 @@
+authors:
+- family-names: Borza
+  given-names: Endre Márk
+  orcid: 0000-0002-8804-4520
+cff-version: 1.2.0
+date-released: '2023-01-19'
+doi: 10.5281/zenodo.7550320
+keywords: []
+license: MIT
+message: If you use this software, please cite it as below.
+references:
+- date-released: '2023-01-18'
+  doi: 10.5281/zenodo.7548466
+  title: sscu-budapest/datazimmer
+  type: software
+  version: 0.4.9
+title: socialmedia
+type: dataset
+url: https://doi.org/10.5281/zenodo.7550320
+version: zimmer-v0/0.1/2022.12.7.1/complete
